@@ -180,7 +180,7 @@ body{
 .sidePanel{
     display: flex;
     flex-direction: column;
-    width: 471px;
+    width: 258px;
     overflow: auto;
     background: white;
     height: auto;
