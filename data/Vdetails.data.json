@@ -3,7 +3,7 @@
     {
       "title": "Anuv Jain - ALAG AASMAAN (a song on the ukulele)",
       "channelName": "Anuv Jain",
-      "channelThumb": "Alag Aasmaan.jpg",
+      "channelThumb": "Anuv Jain.jpg",
       "views": "36M",
       "time": "3 years ago",
       "video": "Alag Aasmaan.mp4",
@@ -12,7 +12,7 @@
     {
       "title": "Baarishein (studio) Anuv Jain",
       "channelName": "Anuv Jain",
-      "channelThumb": "Baarishein.jpg",
+      "channelThumb": "Anuv Jain.jpg",
       "views": "80M",
       "time": "7 years ago",
       "video": "Baarishein.mp4",
@@ -21,11 +21,38 @@
     {
       "title": "Billie Eilish - party favor (Gustixa Remix)",
       "channelName": "Gustixa",
-      "channelThumb": "Billie Eilish - party favor.jpg",
+      "channelThumb": "Gustixa.jpg",
       "views": "11M",
       "time": "3 years ago",
       "video": "Billie Eilish - party favor.mp4",
       "videoThumb": "Billie Eilish - party favor.webp"
+    },
+    {
+      "title": "dendelians (Gustixa Remix)",
+      "channelName": "Gustixa",
+      "channelThumb": "Gustixa.jpg",
+      "views": "2.9M",
+      "time": "2 years ago",
+      "video": "dandelions (Gustixa Remix).mp4",
+      "videoThumb": "dendelians.webp"
+    },
+    {
+      "title": "Aditya Rikhari - FAASLE",
+      "channelName": "Aditya Rikhari",
+      "channelThumb": "Aditya Rikhari.jpg",
+      "views": "30M",
+      "time": "2 years ago",
+      "video": "Faasle.mp4",
+      "videoThumb": "fasle.webp"
+    },
+    {
+      "title": "Farq Hai - Suzonn (Official Music Video)",
+      "channelName": "Suzonn",
+      "channelThumb": "Suzonn.jpg",
+      "views": "13M",
+      "time": "3 years ago",
+      "video": "Farq Hai - Suzonn (Official Music Video).mp4",
+      "videoThumb": "farq hai.webp"
     }
   ]
 }
