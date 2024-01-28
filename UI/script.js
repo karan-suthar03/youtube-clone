@@ -9,7 +9,7 @@ function createVcard(data){
     channelName.innerText = data.channelName;
     let views = document.createElement("div");
     views.setAttribute("class", "views");
-    views.innerText = data.views + '&#8226;' + data.time;
+    views.innerHTML = data.views + " &#8226; " + data.time;
     let videoDetails = document.createElement("div");
     videoDetails.setAttribute("class", "videoDetails");
     videoDetails.appendChild(videoName);
