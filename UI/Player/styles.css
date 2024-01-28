@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+body{
+}
+.header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    background-color: white;
+}
+.firstP{
+    display: flex;
+    align-items: center;
+    margin-right: 75px;
+}
+.firstP .lines{
+    width: 24px;
+    margin: 22px;
+}
+.firstP .logo{
+    height: 20px;
+    width: auto;
+}
+.secondP{
+    display: flex;
+    font-size: 16px;
+    width: 100%;
+    max-width: 732px;
+    justify-content: center;
+    align-items: center;
+}
+.secondP .inputF{
+    display: flex;
+    border: 2px solid #d2d2d2;
+    border-radius: 100px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-between;
+}
+.secondP input{
+    border:none;
+    margin-left: 20px;
+    width: calc(100% - 85px);
+}
+.searchB{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 40px;
+    background: #e8e8e8;
+    border-left: 2px solid #d2d2d2;
+}
+.searchB img{
+    width: 22px;
+    height: auto;
+}
+.mic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background: #f0f0f0;
+    border-radius: 30px;
+    margin-left: 16px;
+}
+.mic img{
+    height: 18px;
+    width: auto;
+}
+.signIn{
+    color: #065fd3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    width: 100px;
+    border: 2px solid #f0f0f0;
+    border-radius: 20px;
+    margin-left: 12px;
+}
+.signIn img{
+    height: 18px;
+}
+.signIn span{
+    font-size: 14px;
+    margin-left: 7px;
+    font-weight: 550;
+    width: max-content;
+}
+
+.thirdP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.thirdP .optionsDot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+.thirdP .optionsDot span{
+    display: inline-block;
+    line-height: 0.45;
+    width: 1px;
+    font-size: 14px;
+}
+.mainC {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 56px);
+    margin-top: 56px;
+    padding-top: 24px;
+}
+.suggestions{
+    display: flex;
+    width: 402px;
+    flex-direction: column;
+}
+.suggestionCard{
+    display: flex;
+    margin-bottom: 8px;
+}
+.VThumbContainer{
+    height: 94px;
+}
+.VThumb{
+    width: 168px;
+    height: 94px;
+    border-radius: 8px;
+}
+.Title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 4px;
+}
+.VDetails{
+    width: 202px;
+    margin-left: 8px;
+}
+.channelName{
+    font-size: 12px;
+    color: #606060;
+    margin-bottom: 4px;
+}
+.Views{
+    font-size: 12px;
+    color: #606060;
+}
+.primaryContainer{
+    margin-right: 26px;
+}
+.VideoPlayer{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.Video{
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+}
+.VTitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.VideoDetails{
+    margin-top: 12px;
+}
+.channelAndSub{
+    display: flex;
+}
+.CThumb{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.CDetails{
+    margin-left: 10px;
+}
+.CName{
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.Subscribers{
+    margin-top: 3px;
+    font-size: 12px;
+    color: #606060;
+    width: max-content;
+}
+.subscribeB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    font-size: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 36px;
+    margin-left: 24px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.likeAnShare{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+.likeAnShare{
+    display: flex;
+}
+.likeDislike{
+    display: flex;
+    overflow: hidden;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+}
+.likeB{
+    display: flex;
+    background-color: #f2f2f2;
+}
+.like{
+    height: 24px;
+}
+.disLikeB{
+    position: sticky;
+    display: flex;
+    background-color: #f2f2f2;
+}
+.disLikeB .like{
+    transform: rotate(180deg);
+}
+.likeB,.disLikeB{
+    padding: 12px;
+}
+.disLikeB::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 24px;
+    border-left: 1px solid #d2d2d2;
+    top: 10px;
+    left: 0;
+}
+.likeB .likeCount{
+    margin-left: 6px;
+    margin-right: 3px;
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.shareB{
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    height: 36px;
+    padding: 0px 10px;
+}
+.shareB img{
+    height: 24px;
+    margin-right: 6px;
+}
+.options{
+    margin-left: 8px;
+    height: 36px;
+    width: 36px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer{
+    max-width: 1100px;
+    display: flex;
+    margin: 0 24px;
+}
+.descriptionBox{
+    margin-top: 12px;
+    background: #f2f2f2;
+    padding: 8px;
+    border-radius: 8px;
+}
+.descriptionBox .views{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.descriptionBox p{
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
