@@ -1,6 +1,6 @@
 
 const VcardContainerCol = document.getElementsByClassName("VCardContainerCol")[0];
-function createVcard(data){
+function createVcard(data,id){
     let videoName = document.createElement("div");
     videoName.setAttribute("class", "videoName");
     videoName.innerText = data.title;
@@ -33,6 +33,7 @@ function createVcard(data){
     Vthumb.appendChild(img);
     let VideoCard  = document.createElement("div");
     VideoCard.setAttribute("class", "VideoCard");
+    VideoCard.setAttribute("onclick",`oye(${id})`);
     VideoCard.appendChild(Vthumb);
     VideoCard.appendChild(VDetailContainer)
     return VideoCard;
@@ -48,7 +49,11 @@ fetch("data/data").then(r => r.json()).then( (result) => {
             VcardContainerCol.appendChild(VcardContainerRow);
         }else{
             console.log(VcardContainerRow.childNodes.length);
-            VcardContainerCol.lastElementChild.appendChild(createVcard(result.data[i]))
+            VcardContainerCol.lastElementChild.appendChild(createVcard(result.data[i],i))
         }
     }
 })
+
+function oye(id){
+    window.location.href = "/player?id="+id;
+}
