@@ -168,6 +168,9 @@ body{
     margin-right: 26px;
 }
 .VideoPlayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     aspect-ratio: 16/9;
     border-radius: 12px;
@@ -314,10 +317,14 @@ body{
     font-weight: bold;
     margin-bottom: 8px;
 }
-.descriptionBox p{
+.descriptionBox p {
     font-size: 14px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+.video{
+    width: 100% !important;
+    height: 100%;
 }
