@@ -5,6 +5,7 @@ const fs = require("fs")
 const videosthumbs = require("./UI/videosthumbs/videosthumbs")
 const data = require("./data/data")
 const app = express()
+const Player  = require("./UI/Player/Player")
 app.use('/icons',icons);
 app.use('/videosthumbs',videosthumbs);
 
@@ -13,6 +14,10 @@ app.get("/data/data",(req,res)=>{
     res.json(JSON.parse(data.toString()));
 })
 app.use("/data",data);
+app.get("/player",(req,res)=>{
+    res.sendFile(path.join(__dirname,"UI/Player/index.html"))
+})
+app.use("/player",Player)
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,"UI/index.html"));
 })
