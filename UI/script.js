@@ -1,5 +1,14 @@
 
 const VcardContainerCol = document.getElementsByClassName("VCardContainerCol")[0];
+function formatNumberShort(number) {
+    if (number >= 1e6) {
+        return (number / 1e6).toFixed(0) + 'M';
+    } else if (number >= 1e3) {
+        return (number / 1e3).toFixed(0) + 'K';
+    } else {
+        return number.toString();
+    }
+}
 function createVcard(data,id){
     let videoName = document.createElement("div");
     videoName.setAttribute("class", "videoName");
@@ -9,7 +18,7 @@ function createVcard(data,id){
     channelName.innerText = data.channelName;
     let views = document.createElement("div");
     views.setAttribute("class", "views");
-    views.innerHTML = data.views + " &#8226; " + data.time;
+    views.innerHTML = formatNumberShort(data.views) + " views &#8226; " + data.time;
     let videoDetails = document.createElement("div");
     videoDetails.setAttribute("class", "videoDetails");
     videoDetails.appendChild(videoName);
@@ -42,13 +51,11 @@ fetch("data/data").then(r => r.json()).then( (result) => {
     let VcardContainerRow= VcardContainerCol.lastElementChild;
     for(let i = 0; i < result.data.length; i++){
         if(VcardContainerCol.lastElementChild.childNodes.length >= 3) {
-            console.log(VcardContainerCol.lastElementChild.childNodes.length);
             VcardContainerRow = document.createElement("div");
             VcardContainerRow.setAttribute("class", "VCardContainerRow");
-            VcardContainerRow.appendChild(createVcard(result.data[i]))
+            VcardContainerRow.appendChild(createVcard(result.data[i],i))
             VcardContainerCol.appendChild(VcardContainerRow);
         }else{
-            console.log(VcardContainerRow.childNodes.length);
             VcardContainerCol.lastElementChild.appendChild(createVcard(result.data[i],i))
         }
     }
